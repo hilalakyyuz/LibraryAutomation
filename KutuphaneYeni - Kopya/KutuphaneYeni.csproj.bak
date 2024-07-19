@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{481CA2B9-C044-476E-AAAC-800ED9EDD2B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KutuphaneYeni</RootNamespace>
+    <AssemblyName>KutuphaneYeni</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v23.2.Win, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v23.2.UI, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Export, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.2.UI, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v23.2.UI, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v23.2.Wizard, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v23.2.Presets, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v23.2.Win, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v23.2.Extensions, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v23.2.UI, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\Kütüphane Otomasyon\KutuphaneUyg\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\Kütüphane Otomasyon\KutuphaneUyg\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnasayfaBase.cs" />
+    <Compile Include="APİ\ApiGorevli\ApiGorevli.cs" />
+    <Compile Include="APİ\ApiKategori\ApiKategori.cs" />
+    <Compile Include="APİ\ApiKitap\ApiKitap.cs" />
+    <Compile Include="APİ\ApiKullanici\ApiKullanici.cs" />
+    <Compile Include="APİ\ApiOdunc\ApiOdunc.cs" />
+    <Compile Include="APİ\ApiResim\ApiResim.cs" />
+    <Compile Include="APİ\ApiYazar\ApiYazar .cs" />
+    <Compile Include="DBModels\DBGorevliler\DBGorevli.cs" />
+    <Compile Include="DBModels\DBKategori\DBKategori.cs" />
+    <Compile Include="DBModels\DBKitap\DBKitap.cs" />
+    <Compile Include="DBModels\DBKullanicilar\DBKullanici.cs" />
+    <Compile Include="DBModels\DBOdunc\DBOdunc.cs" />
+    <Compile Include="DBModels\DBRapor\DBRapor.cs" />
+    <Compile Include="DBModels\DBResimler\DBResimler.cs" />
+    <Compile Include="DBModels\DBYazar\DBYazar.cs" />
+    <Compile Include="Entities\EntityKategoriler\EntityKategoriler.cs" />
+    <Compile Include="Entities\EntityKitap\EntityKitap.cs" />
+    <Compile Include="Entities\EntityKullanici\EntityKullanici.cs" />
+    <Compile Include="Entities\EntityOduncKitaplar\EntityOduncK.cs" />
+    <Compile Include="Entities\EntityRapor\EntityRapor.cs" />
+    <Compile Include="Entities\EntityResim\EntityResim.cs" />
+    <Compile Include="Entities\EntityYazar\EntityYazar.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKategoriDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKategoriDetay.Designer.cs">
+      <DependentUpon>frmKategoriDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKategoriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKategoriler.Designer.cs">
+      <DependentUpon>frmKategoriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKitapDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitapDetay.Designer.cs">
+      <DependentUpon>frmKitapDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitaplar.Designer.cs">
+      <DependentUpon>frmKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullaniciDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullaniciDetay.Designer.cs">
+      <DependentUpon>frmKullaniciDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullanicilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullanicilar.Designer.cs">
+      <DependentUpon>frmKullanicilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdunc.Designer.cs">
+      <DependentUpon>frmOdunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOduncDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOduncDetay.Designer.cs">
+      <DependentUpon>frmOduncDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYazarDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYazarDetay.Designer.cs">
+      <DependentUpon>frmYazarDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYazarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYazarlar.Designer.cs">
+      <DependentUpon>frmYazarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gorevliler.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Sifreleme.cs" />
+    <Compile Include="jsonFormat\JsonClass.cs" />
+    <Compile Include="jsonFormat\jsonModel.cs" />
+    <Compile Include="Kategoriler.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kitaplar.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanicilar.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="OduncKitaplar.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resimForm.Designer.cs">
+      <DependentUpon>resimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resimler.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="XmlIslem\xmlClass.cs" />
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReportRapor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReportRapor.Designer.cs">
+      <DependentUpon>XtraReportRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yazarlar.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="İmage\imgClass.cs" />
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKategoriDetay.resx">
+      <DependentUpon>frmKategoriDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKategoriler.resx">
+      <DependentUpon>frmKategoriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKitapDetay.resx">
+      <DependentUpon>frmKitapDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKitaplar.resx">
+      <DependentUpon>frmKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciDetay.resx">
+      <DependentUpon>frmKullaniciDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullanicilar.resx">
+      <DependentUpon>frmKullanicilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdunc.resx">
+      <DependentUpon>frmOdunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOduncDetay.resx">
+      <DependentUpon>frmOduncDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYazarDetay.resx">
+      <DependentUpon>frmYazarDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYazarlar.resx">
+      <DependentUpon>frmYazarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="resimForm.resx">
+      <DependentUpon>resimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReportRapor.resx">
+      <DependentUpon>XtraReportRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Anasayfa.datasource" />
+    <None Include="Properties\DataSources\frmKategoriler.datasource" />
+    <None Include="Properties\DataSources\frmKitaplar.datasource" />
+    <None Include="Properties\DataSources\frmKullanicilar.datasource" />
+    <None Include="Properties\DataSources\frmOdunc.datasource" />
+    <None Include="Properties\DataSources\frmYazarlar.datasource" />
+    <None Include="Properties\DataSources\Giris.datasource" />
+    <None Include="Properties\DataSources\Gorevliler.datasource" />
+    <None Include="Properties\DataSources\Kategoriler.datasource" />
+    <None Include="Properties\DataSources\Kitaplar.datasource" />
+    <None Include="Properties\DataSources\Kullanicilar.datasource" />
+    <None Include="Properties\DataSources\KutuphaneYeni.Entities.EntityKategoriler.EntityKategoriler.datasource" />
+    <None Include="Properties\DataSources\KutuphaneYeni.Entities.EntityKitap.EntityKitap.datasource" />
+    <None Include="Properties\DataSources\KutuphaneYeni.Entities.EntityKullanici.EntityKullanici.datasource" />
+    <None Include="Properties\DataSources\KutuphaneYeni.Entities.EntityOduncKitaplar.EntityOduncK.datasource" />
+    <None Include="Properties\DataSources\KutuphaneYeni.Entities.EntityYazar.EntityYazar.datasource" />
+    <None Include="Properties\DataSources\KutuphaneYeni.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\KutuphaneYeni.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\kutuphane_uygEntities.datasource" />
+    <None Include="Properties\DataSources\OduncKitaplar.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\sysdiagrams.datasource" />
+    <None Include="Properties\DataSources\Yazarlar.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
